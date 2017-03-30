@@ -1,0 +1,21 @@
+## .gitignore for MPLAB v8
+*.p1
+*.cof
+*.hex
+*.sym
+*.map
+*.hxl
+*.lst
+*.rlf
+*.pre
+*.obj
+*.lst
+*.rlf
+*.sdb
+*.mcs
+*.as
+*.o
+*.err
+
+.DS_Store
+Thumbs.db
