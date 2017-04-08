@@ -41,6 +41,18 @@ float ToneFreq[] = {
 #define PWM_PRESCALE (16)
 #define PWM_DUTY_CYCLE (10) // Percentage of Duty Cycle
 
+/* Calculation for Timer 0 as 1 sec
+ *   10MHz clock, 256 prescaler, 8 bit mode
+ *   Instruction freq = 10MHz / 4 = 2.5MHz
+ *   Timer clock freq = 2.5MHz / 256 prescaler
+ *   No of cycles = 1Hz / (2.5MHz / 256)^-1
+ *   No of cycles = 2.5e6 / 256 = 9765.625
+ *   Reset value = 65535 - 9765.625 = 55769.375
+ *   Formula: 65535 - FOSC / 4 / PRESCALE 
+ */ 
+#define TIMER0_RESET_VAL (55769)
+
+
 BOOL RB0_Pressed = FALSE;
 
 void main(void);
@@ -179,16 +191,9 @@ void ISR(void) {
 }
 
 void resetTimer0OneSecond() {
-    /* Calculation for Timer 0 as 1 sec
-     *   10MHz clock, 256 prescaler, 8 bit mode
-     *   Instruction freq = 10MHz / 4 = 2.5MHz
-     *   Timer clock freq = 2.5MHz / 256 prescaler
-     *   No of cycles = 1Hz / (2.5MHz / 256)^-1
-     *   No of cycles = 2.5e6 / 256 = 9765.625
-     *   Reset value = 65535 - 9765.625 = 55769.375
-     */ 
-    TMR0H = 55769 >> 8; //reset timer
-    TMR0L = 55769 & 0xFF; //reset timer
+    
+    TMR0H = TIMER0_RESET_VAL >> 8; //reset timer
+    TMR0L = TIMER0_RESET_VAL & 0xFF; //reset timer
 }
 
 //----------------------------------------------------------------------------
