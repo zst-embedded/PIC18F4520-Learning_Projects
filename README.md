@@ -12,8 +12,9 @@ Project                                            | Done on    | Category      
 [PWM-CCP2]                                         | 2017-03-31 | PWM                | Push Button
 [PWM-MusicalTone]                                  | 2017-03-31 | PWM, Timer         | Buzzer, Push Button
 [ADCPotPWMMusical]                                 | 2017-04-28 | ADC, PWM           | Buzzer, Potentiometer
-[SevenSegmentMultiplex]                            | 2017-05-19 | Timers             | 4-digit 7-segment display  
-
+[SevenSegmentMultiplex]                            | 2017-05-12 | Timers, Interfacing | 4-digit 7-segment display  
+[LCD-HelloWorld]                                   | 2017-05-19 | Interfacing         | HD44780 LCD display
+[LCD-CustomChar]                                   | 2017-05-19 | Interfacing         | HD44780 LCD display
 
 
 [PushButtonPoll-Debouncing]: ./PushButtonPoll-Debouncing
@@ -24,3 +25,5 @@ Project                                            | Done on    | Category      
 [PWM-MusicalTone]: ./PWM-MusicalTone
 [ADCPotPWMMusical]: ./ADCPotPWMMusical
 [SevenSegmentMultiplex]: ./SevenSegmentMultiplex
+[LCD-HelloWorld]: ./LCD-HelloWorld
+[LCD-CustomChar]: ./LCD-CustomChar
