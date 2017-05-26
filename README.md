@@ -15,6 +15,7 @@ Project                                            | Done on    | Category      
 [SevenSegmentMultiplex]                            | 2017-05-12 | Timers, Interfacing | 4-digit 7-segment display  
 [LCD-HelloWorld]                                   | 2017-05-19 | Interfacing         | HD44780 LCD display
 [LCD-CustomChar]                                   | 2017-05-19 | Interfacing         | HD44780 LCD display
+[Capture-CCP1]                                     | 2017-05-26 | CPC, Interfacing    | HD44780 LCD display, Function Generator
 
 
 [PushButtonPoll-Debouncing]: ./PushButtonPoll-Debouncing
@@ -27,3 +28,4 @@ Project                                            | Done on    | Category      
 [SevenSegmentMultiplex]: ./SevenSegmentMultiplex
 [LCD-HelloWorld]: ./LCD-HelloWorld
 [LCD-CustomChar]: ./LCD-CustomChar
+[Capture-CCP1]: ./Capture-CCP1
