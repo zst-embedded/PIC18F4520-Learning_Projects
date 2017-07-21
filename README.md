@@ -16,7 +16,7 @@ Project                                            | Done on    | Category      
 [LCD-HelloWorld]                                   | 2017-05-19 | Interfacing         | HD44780 LCD display
 [LCD-CustomChar]                                   | 2017-05-19 | Interfacing         | HD44780 LCD display
 [Capture-CCP1]                                     | 2017-05-26 | CPC, Interfacing    | HD44780 LCD display, Function Generator
-
+[MSSP-I2C_Master-Write]                            | 2017-07-21 | I2C, Interfacing    | MCP23008 I/O expander, 7-segment display
 
 [PushButtonPoll-Debouncing]: ./PushButtonPoll-Debouncing
 [PushButtonInterrupt-ToggleLED]: ./PushButtonInterrupt-ToggleLED
@@ -29,3 +29,4 @@ Project                                            | Done on    | Category      
 [LCD-HelloWorld]: ./LCD-HelloWorld
 [LCD-CustomChar]: ./LCD-CustomChar
 [Capture-CCP1]: ./Capture-CCP1
+[MSSP-I2C_Master-Write]: ./MSSP-I2C_Master-Write
